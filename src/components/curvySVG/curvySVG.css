@@ -1,0 +1,50 @@
+.curvy__svg {
+  position: relative;
+  z-index: 1;
+}
+.custom-shape-divider-top-1648062360 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1648062360 svg {
+  position: relative;
+  display: block;
+  width: calc(158% + 1.3px);
+  height: 342px;
+}
+
+.custom-shape-divider-top-1648062360 .shape-fill {
+  fill: #3e2d9b;
+}
+/* .custom-shape-divider-bottom-1648059826 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1648059826 svg {
+  position: relative;
+  display: block;
+  width: calc(158% + 1.3px);
+  height: 257px;
+}
+
+.custom-shape-divider-bottom-1648059826 .shape-fill {
+  fill: #ffffff;
+}
+ */
+
+@media screen and (max-width: 380px) {
+  .custom-shape-divider-top-1648062360 svg {
+    height: 150px;
+  }
+}

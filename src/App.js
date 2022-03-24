@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Navbar, CurvySVG, CurvySVG2, CurvySVG3, Socials } from "./components";
+import { Content, content, Footer, footer } from "./containers";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Header">
+        <Navbar></Navbar>
+        <CurvySVG></CurvySVG>
+      </div>
+      <div className="emptyDiv"></div>
+      <Content></Content>
+      <div className="footer">
+        <CurvySVG2></CurvySVG2>
+      </div>
+      <button className="joinButton" type="button">
+        Join Now
+      </button>
+      <Socials></Socials>
     </div>
   );
-}
+};
 
 export default App;

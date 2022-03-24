@@ -1,0 +1,40 @@
+.socials {
+  display: flex;
+  position: absolute;
+  bottom: 28px;
+  right: 8vw;
+}
+
+.socials img {
+  height: 40px;
+  width: 40px;
+  margin: 0.5rem;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1050px) {
+  .socials {
+    display: flex;
+    position: absolute;
+    bottom: 26px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .socials {
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    right: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .socials {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    bottom: 12px;
+    right: 32vw;
+  }
+}

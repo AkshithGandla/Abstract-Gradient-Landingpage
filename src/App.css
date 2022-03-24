@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scrollbar-color: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: unset;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  z-index: 2;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 700px) {
+  .section__margin {
+    margin: 4rem;
+  }
+  .section__padding {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+}
+
+.sec {
+  position: relative;
+}
+
+.sec1 {
+  position: relative;
+}
+
+.abc {
+  background-color: #0250c3;
+}
+
+.Header {
+  background-color: #3e2d9b;
+  /*  min-height: 30vh; */
+}
+
+.emptyDiv {
+  min-height: 25vh;
+}
+
+.footer {
+  background-color: #0250c3;
+  /*  min-height: 30vh; */
+}
+
+.joinButton {
+  flex: 0.6;
+
+  margin: auto;
+  min-height: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: #ff4820;
+  border: 2px solid rgb(239, 183, 43);
+  padding: 0 2rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  z-index: 2;
+  position: absolute;
+  bottom: 12vh;
+  right: 45vw;
+
+  background: rgb(239, 183, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(239, 183, 43, 1) 0%,
+    rgba(239, 181, 44, 1) 35%,
+    rgba(233, 130, 45, 1) 100%
+  );
+}
+.App {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /*  background-image: url("https://i.imgur.com/Xc4ecKt.png"); */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1050px) {
+  .emptyDiv {
+    min-height: 24vh;
   }
-  to {
-    transform: rotate(360deg);
+  .joinButton {
+    min-height: 50px;
+    line-height: 20px;
+    bottom: 16vh;
+    right: 42vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .emptyDiv {
+    min-height: 24vh;
+  }
+  .joinButton {
+    min-height: 40px;
+    line-height: 20px;
+    bottom: 200px;
+    right: 32vw;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .emptyDiv {
+    min-height: 18vh;
   }
 }
