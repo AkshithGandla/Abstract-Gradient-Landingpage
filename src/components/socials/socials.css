@@ -32,9 +32,27 @@
 @media screen and (max-width: 550px) {
   .socials {
     display: flex;
+    justify-content: space-around;
+    position: absolute;
+    display: block;
+    margin: auto;
+    bottom: 12px;
+    right: 30vw;
+  }
+
+  .socials img {
+    height: 40px;
+    width: 40x;
+    margin: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .socials {
+    display: flex;
     position: absolute;
     justify-content: space-around;
     bottom: 12px;
-    right: 32vw;
+    right: 24vw;
   }
 }

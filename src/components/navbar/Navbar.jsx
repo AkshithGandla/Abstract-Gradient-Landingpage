@@ -6,6 +6,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [section, setSection] = useState("home");
 
   return (
     <div className="SPA__navbar">
@@ -15,16 +16,40 @@ const Navbar = () => {
         </div>
         <div className="SPA__navbar-links_container">
           <p>
-            <a href="#home">Home</a>
+            <a
+              className={section === "home" ? "active__section" : ""}
+              onClick={() => setSection("home")}
+              href="#home"
+            >
+              Home
+            </a>
           </p>
           <p>
-            <a href="#company">Company</a>
+            <a
+              className={section === "company" ? "active__section" : ""}
+              onClick={() => setSection("company")}
+              href="#company"
+            >
+              Company
+            </a>
           </p>
           <p>
-            <a href="#team">Team</a>
+            <a
+              className={section === "team" ? "active__section" : ""}
+              onClick={() => setSection("team")}
+              href="#team"
+            >
+              Team
+            </a>
           </p>
           <p>
-            <a href="#about">About</a>
+            <a
+              className={section === "about" ? "active__section" : ""}
+              onClick={() => setSection("about")}
+              href="#about"
+            >
+              About
+            </a>
           </p>
         </div>
       </div>

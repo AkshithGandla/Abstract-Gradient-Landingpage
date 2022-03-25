@@ -1,5 +1,12 @@
 import React from "react";
-import { Navbar, CurvySVG, CurvySVG2, CurvySVG3, Socials } from "./components";
+import {
+  Navbar,
+  CurvySVG,
+  CurvySVG2,
+  CurvySVG3,
+  Socials,
+  Pagination,
+} from "./components";
 import { Content, content, Footer, footer } from "./containers";
 import "./App.css";
 
@@ -19,6 +26,7 @@ const App = () => {
         Join Now
       </button>
       <Socials></Socials>
+      <Pagination></Pagination>
     </div>
   );
 };

@@ -135,3 +135,7 @@
     display: block;
   }
 }
+
+.active__section {
+  border-top: 3px solid RGB(255, 183, 0);
+}
